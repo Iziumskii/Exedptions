@@ -1,6 +1,3 @@
-command = input('Введите данные: ')
-
-
 def addition(data):
     print(int(data[1]) + int(data[2]))
 
@@ -28,6 +25,8 @@ def operation_definition(data):
         division(data)
 
 
+command = input('Введите данные: ')
+
 assert command[0] in ('+', '-', '*', '/'), "Вы ввели неверные данные"
 assert (len(command) == 3), "Вы ввели невернное кол-во символов"
 
@@ -37,5 +36,5 @@ except ZeroDivisionError as e:
     print(e)
 except ValueError as e:
     print(e)
-#except IndexError as e:
+# except IndexError as e:
 #    print(e)
