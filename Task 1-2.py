@@ -27,6 +27,7 @@ def operation_definition(data):
 
 command = input('Введите данные: ').split()
 
+assert len(command[0]) == 1, "Водите значения через пробел ' '"
 assert command[0] in ('+', '-', '*', '/'), "Вы ввели неверные данные"
 assert (len(command) == 3), "Вы ввели невернное кол-во символов"
 
